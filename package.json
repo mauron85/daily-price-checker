@@ -1,11 +1,16 @@
 {
-    "name": "daily-price-checker",
-    "version": "0.1.0",
-    "engines": {
-      "node": "10.x"
-    },
-    "dependencies": {
-      "puppeteer": "^2.1.1"
-    }
+  "name": "daily-price-checker",
+  "version": "0.1.0",
+  "author": "@mauron85",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "dependencies": {
+    "puppeteer": "^2.1.1"
   }
-  
+}
