@@ -1,0 +1,11 @@
+{
+    "name": "daily-price-checker",
+    "version": "0.1.0",
+    "engines": {
+      "node": "10.x"
+    },
+    "dependencies": {
+      "puppeteer": "^2.1.1"
+    }
+  }
+  
