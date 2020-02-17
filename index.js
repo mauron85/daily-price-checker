@@ -1,11 +1,16 @@
-const http = require("http";
+const http = require("http");
 const puppeteer = require("puppeteer");
 const PORT = process.env.PORT || 5000
 
 const requestListener = function (req, res) {
   res.writeHead(200);
   (async () => {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({
+      args: [
+        '--no-sandbox',
+        '--disable-setuid-sandbox',
+      ],
+    });
     const page = await browser.newPage();
     await page.goto("https://reolink.com/product/rlc-410w/", {
       waitUntil: "networkidle0"
